@@ -1,0 +1,296 @@
+/* Custom Styles */
+
+
+#what-we-do .carousel-caption {
+  bottom: 20px;
+}
+
+.project-content {
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+
+.project-content:hover {
+  background-color: #f0f0f0;
+}
+
+.project-image {
+  transition: opacity 0.5s ease;
+}
+/* Custom Styles */
+
+section.container {
+  margin-top: 50px;
+}
+
+h2.text-danger {
+  color: #dc3545;
+}
+
+h1.font-weight-bold {
+  font-weight: bold;
+}
+
+button#contact-button {
+  background-color: #dc3545;
+  border: none;
+  padding: 10px 20px;
+  color: white;
+  cursor: pointer;
+}
+
+button#contact-button:hover {
+  background-color: #c82333;
+}
+
+img.img-fluid {
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+.modal-body {
+  padding: 2rem;
+}
+
+.modal-body .form-group {
+  margin-bottom: 1.5rem;
+  position: relative;
+}
+
+.modal-body .form-check {
+  margin-bottom: 1.5rem;
+}
+
+.btn-danger {
+  background-color: #ff0066;
+  border-color: #ff0066;
+}
+
+.btn-danger:hover {
+  background-color: #e6005c;
+  border-color: #e6005c;
+}
+
+.error-message {
+  display: none;
+  color: red;
+  margin-top: 1rem;
+}
+
+.success-message {
+  
+      display: none;
+      background: #E1F8ED;
+      padding: 20px;
+      margin-top: 16px;
+      margin-bottom: 16px;
+      &.is-active {
+        display: block;
+      }
+  
+}
+
+.custom-input {
+width: 100%;
+font-weight: bold;
+border: none;
+border-bottom: 2px solid #f0f0f0;
+outline: none;
+ /* Added */
+}
+
+.placeholder {
+position: absolute;
+pointer-events: none;
+bottom: 5px;
+left: 0;
+transition: 0.2s ease all;
+opacity: 0.5; /* Adjusted */
+font-size: 14px; /* Adjusted */
+}
+
+.custom-input:focus ~ .placeholder,
+.custom-input:not(:focus):valid ~ .placeholder {
+top: -18px; /* Adjusted */
+font-size: 12px; /* Adjusted */
+opacity: 1;
+bottom: auto; /* Added */
+}
+.service-box {
+position: relative;
+}
+
+.service-box img {
+width: 100%;
+height: 300px; /* Fixed height for all images */
+object-fit: cover; /* Ensures the images maintain their aspect ratio */
+border-radius: 10px;
+}
+
+.hover-overlay {
+display: none;
+position: absolute;
+top: 0;
+left: 0;
+right: 0;
+bottom: 0;
+background: #dc3545; /* Match the background color as in the image */
+color: white;
+align-items: center;
+justify-content: center;
+flex-direction: column;
+border-radius: 10px;
+opacity: 20px;
+text-align: center;
+}
+
+.service-box:hover .hover-overlay {
+display: flex;
+}
+
+.read-more-btn {
+background-color: white;
+color: red;
+border: none;
+cursor: pointer;
+align-items: center;
+padding-top: 10px;
+padding-bottom: 10px;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+width: 5%;
+}
+
+.carousel-indicators {
+bottom: -50px;
+}
+
+/* Custom Styles for Carousel Indicators */
+.carousel-indicators li {
+  background-color: black; 
+  border-radius: 50%; 
+  width: 10px; 
+  height: 10px; 
+  margin: 0 5px; 
+  cursor: pointer; 
+}
+.carousel-indicators .active {
+  background-color: red; 
+}
+
+
+
+.p-container {
+display: flex;
+}
+.p-container p
+{
+margin-right: 10%;
+margin-left: 10%;
+}
+
+
+/* Our Project Section */
+#our-project {
+padding: 50px 0;
+}
+
+#our-project h2 {
+font-size: 36px;
+color: #ff3b3f;
+margin-bottom: 30px;
+}
+
+#our-project .project-image {
+width: 100%;
+height: 360px;
+}
+
+#our-project .project-content {
+padding: 15px;
+margin-bottom: 10px;
+cursor: pointer;
+transition: background-color 0.3s ease;
+}
+
+#our-project .project-content h4 {
+font-size: 20px;
+font-weight: bold;
+margin-bottom: 10px;
+}
+
+#our-project .project-content p {
+font-size: 16px;
+margin: 0;
+}
+
+/* Active Content Styles */
+.project-content.active {
+background-color: #ff3b3f;
+color: #fff;
+}
+
+.project-content.active h4, .project-content.active p {
+color: #fff;
+}
+
+
+
+/*Company Growth*/
+#company-growth
+
+{
+background-color: honeydew;
+  padding: 50px 0;
+}
+
+#company-growth h2 {
+color: #ff3b3f;
+margin-bottom: 10px;
+}
+
+#company-growth h3 {
+font-size: 36px;
+color: #000;
+margin-bottom: 40px;
+}
+
+.growth-card {
+background-color: #fff;
+border-radius: 10px;
+box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+margin: 15px;
+padding: 10px;
+transition: transform 0.3s, box-shadow 0.3s;
+
+}
+
+.growth-card:hover {
+transform: translateY(-10px);
+box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+}
+
+.card-content {
+padding: 20px;
+}
+
+.icon {
+font-size: 36px;
+color: #ff3b3f;
+margin-bottom: 15px;
+}
+
+.growth-card h4 {
+font-size: 24px;
+color: #000;
+margin: 10px 0;
+}
+
+.growth-card p {
+font-size: 16px;
+color: #666;
+margin: 0;
+}

@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Frontend Assignment</title>
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+  <script src="https://code.jquery.com/jquery-1.9.1.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <link rel="stylesheet" href="styles.css">
+
+</head>
+<body>
+  <!-- Header with Navigation -->
+  <header class="container-fluid">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" href="#">Digital Marketing</a>
+      <div class="collapse navbar-collapse">
+        <ul class="navbar-nav ml-20px">
+          <li class="nav-item"><a class="nav-link" href="#what-we-do">What We Do</a></li>
+          <li class="nav-item"><a class="nav-link" href="#our-project">Our Project</a></li>
+          <li class="nav-item"><a class="nav-link"  href="#company-growth">Company Growth</a></li>
+        </ul>
+      </div>
+    </nav>
+
+  </header>
+
+  <!-- Portfolio Section -->
+  <section class="container my-5">
+    <div class="row align-items-center">
+      <div class="col-md-6">
+        <h2 class="text-danger">AWARD WINNING</h2>
+        <h1 class="font-weight-bold">DIGITAL MARKETING AGENCY</h1>
+        <p>Morbi sed lacus nec risus finibus feugiat at fermentum nibh. Pellentesque vitae ante at elit fringilla ac at purus. Morbi sed lacus nec risus finibus feugiat at fermentum.</p>
+        <button class="btn btn-danger" id="contact-button">Contact Us</button>
+      </div>
+      <div class="col-md-6">
+        <img src="assests/profile_pic.png" class="img-fluid rounded" alt="Digital Marketing Agency">
+      </div>
+    </div>
+  </section>
+
+  <!-- Profile section with contact form -->
+  <div class="modal fade" id="contactModal" tabindex="-1" aria-labelledby="contactModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="contactModalLabel">Talk to Us</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <form id="contact-form" action="https://getform.io/f/nbdowkja" method="POST">
+            <div class="form-group">
+              <input type="email" class="form-control custom-input" id="work-email" name="email" required>
+              <span class="placeholder">Work email*</span>
+            </div>
+            <div class="form-row">
+              <div class="form-group col-md-6">
+                <input type="text" class="form-control custom-input" id="first-name" name="first_name" required>
+                <span class="placeholder">First name*</span>
+              </div>
+              <div class="form-group col-md-6">
+                <input type="text" class="form-control custom-input" id="last-name" name="last_name" required>
+                <span class="placeholder">Last name*</span>
+              </div>
+            </div>
+            <div class="form-group form-check">
+              <input type="checkbox" class="form-check-input" id="consent-checkbox" name="consent" required>
+              <label class="form-check-label" for="consent-checkbox">I agree to Fyle's terms and conditions, and provide consent to send me communication.</label>
+            </div>
+            <button type="submit" class="btn btn-danger" id="contact-submit">Contact Us</button>
+            <div class="success-message" id="success-message">Form submitted successfully!</div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- What We Do Section -->
+ 
+
+  <div id="what-we-do" class="container mt-5">
+    <h2 class="text-danger">What We Do</h2>
+    <div class="p-container">
+      <h1 style="font-weight: bold; padding-top: 0%;">SERVICES PROVIDE FOR YOU</h1>
+      <p>Morbi sed lacus nec risus finibus feugiat et fermentum nibh. Pellentesque <br>vitae ante at elit fringilla ac et purus. Morbi sed lacus nec risus finibus feugiat et fermentum.</p>
+    </div>
+    <div id="servicesCarousel" class="carousel slide" data-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <div class="row">
+            <div class="col-sm-4">
+              <div class="service-box">
+                <img src="assests/profile_pic.png" alt="Image 1">
+                <div class="hover-overlay">
+                  <div>
+                    <h3>WEB DEVELOPMENT</h3>
+                    <p>Morbi sed lacus nec risus finibus feugiat et fermentum nibh. Pellentesque</p>
+                    <button class="read-more-btn" onclick="window.open('https://www.fylehq.com', '_blank')">READ MORE <span>&#8594;</span></button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-4">
+              <div class="service-box">
+                <img src="assests/liquids.webp" alt="Image 2">
+                <div class="hover-overlay">
+                  <div>
+                    <h3>WEB DEVELOPMENT</h3>
+                    <p>Morbi sed lacus nec risus finibus feugiat et fermentum nibh. Pellentesque</p>
+                    <button class="read-more-btn" onclick="window.open('https://www.fylehq.com', '_blank')">READ MORE <span>&#8594;</span></button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-4">
+              <div class="service-box">
+                <img src="assests/makeup.png" alt="Image 3">
+                <div class="hover-overlay">
+                  <div>
+                    <h3>WEB DEVELOPMENT</h3>
+                    <p>Morbi sed lacus nec risus finibus feugiat et fermentum nibh. Pellentesque</p>
+                    <button class="read-more-btn" onclick="window.open('https://www.fylehq.com', '_blank')">READ MORE <span>&#8594;</span></button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="row">
+            <div class="col-sm-4">
+              <div class="service-box">
+                <img src="assests/vegetables.jpeg" alt="Image 4">
+                <div class="hover-overlay">
+                  <div>
+                    <h3>WEB DEVELOPMENT</h3>
+                    <p>Morbi sed lacus nec risus finibus feugiat et fermentum nibh. Pellentesque</p>
+                    <button class="read-more-btn" onclick="window.open('https://www.fylehq.com', '_blank')">READ MORE <span>&#8594;</span></button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-4">
+              <div class="service-box">
+                <img src="assests/snow.jpg" alt="Image 5">
+                <div class="hover-overlay">
+                  <div>
+                    <h3>WEB DEVELOPMENT</h3>
+                    <p>Morbi sed lacus nec risus finibus feugiat et fermentum nibh. Pellentesque</p>
+                    <button class="read-more-btn" onclick="window.open('https://www.fylehq.com', '_blank')">READ MORE <span>&#8594;</span></button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-4">
+              <div class="service-box">
+                <img src="assests/liquids.webp" alt="Image 6">
+                <div class="hover-overlay">
+                  <div>
+                    <h3>WEB DEVELOPMENT</h3>
+                    <p>Morbi sed lacus nec risus finibus feugiat et fermentum nibh. Pellentesque</p>
+                    <button class="read-more-btn" onclick="window.open('https://www.fylehq.com', '_blank')">READ MORE <span>&#8594;</span></button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="row">
+        <div class="col-sm-4 ">
+        <div class="service-box">
+            <img src="assests/vegetables.jpeg" alt="Image 7">
+            <div class="hover-overlay">
+              <div>
+                <h3>WEB DEVELOPMENT</h3>
+                <p>Morbi sed lacus nec risus finibus feugiat et fermentum nibh. Pellentesque</p>
+                <button class="read-more-btn" onclick="window.open('https://www.fylehq.com', '_blank')">READ MORE  <span>&#8594;</span></button>
+              </div>
+            </div>
+          </div>
+          </div>
+          <div class="col-sm-4">
+            <div class="service-box">
+            <img src="assests/snow.jpg" alt="Image 8">
+            <div class="hover-overlay">
+              <div>
+                <h3>WEB DEVELOPMENT</h3>
+                <p>Morbi sed lacus nec risus finibus feugiat et fermentum nibh. Pellentesque</p>
+                <button class="read-more-btn" onclick="window.open('https://www.fylehq.com', '_blank')">READ MORE  <span>&#8594;</span></button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <div class="service-box">
+            <img src="assests/vegetables.jpeg" alt="Image 9">
+            <div class="hover-overlay">
+              <div>
+                <h3>WEB DEVELOPMENT</h3>
+                <p>Morbi sed lacus nec risus finibus feugiat et fermentum nibh. Pellentesque</p>
+                <button class="read-more-btn" onclick="window.open('https://www.fylehq.com', '_blank')">READ MORE  <span>&#8594;</span></button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+      <!-- Indicators -->
+     
+    </div>
+    <ul class="carousel-indicators">
+      <li data-target="#servicesCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#servicesCarousel" data-slide-to="1"></li>
+      <li data-target="#servicesCarousel" data-slide-to="2"></li>
+    </ul>
+  </div>
+  <!-- Our Project Section -->
+
+  <section id="our-project" class="container mt-5 text-center">
+    <h2>Our Project</h2>
+    <h3 >WHY WE ARE BEST</h3>
+    <div class="row">
+        <div class="col-md-6 d-flex align-items-center justify-content-center">
+            <img id="project-image" src="assests/cutting.webp" class="img-fluid project-image" alt="Project Image">
+        </div>
+        <div class="col-md-6">
+            
+            <div class="project-content active" data-image="assests/cake.jpg">
+                <h4>Genderless Kei – Japan’s Hot</h4>
+                <p>Set to launch on the manufacturer’s new A330neo aircraft in 2017, it’s offering lots of...</p>
+            </div>
+            <div class="project-content" data-image="assests/clothes.jpg">
+                <h4>Better Strategy & Quality</h4>
+                <p>Set to launch on the manufacturer’s new A330neo aircraft in 2017, it’s offering lots of...</p>
+            </div>
+            <div class="project-content" data-image="assests/icecream.jpg">
+                <h4>Genderless Kei – Japan’s Hot</h4>
+                <p>Set to launch on the manufacturer’s new A330neo aircraft in 2017, it’s offering lots of...</p>
+            </div>
+        </div>
+    </div>
+</section>
+  
+
+  <!-- Company Growth -->
+  
+  <section id="company-growth" class="container-fluid mt-5 text-center">
+    <h2 class="text-uppercase">Experts Growth</h2>
+    <h3>Our Company Growth</h3>
+    <div class="row justify-content-center">
+        <div class="col-md-2 col-sm-6 growth-card">
+            <div class="card-content">
+                <div class="icon"><span>&#10084;</span></div>
+                <h4>199 +</h4>
+                <p>Satisfied Customers</p>
+            </div>
+        </div>
+        <div class="col-md-2 col-sm-6 growth-card">
+            <div class="card-content">
+                <div class="icon"><i  class="fa">&#xf017;</i></div>
+                <h4>1591 +</h4>
+                <p>Days of Operation</p>
+            </div>
+        </div>
+        <div class="col-md-2 col-sm-6 growth-card">
+            <div class="card-content">
+                <div class="icon"><i  class="fa">&#xf058;</i></div>
+                <h4>283 +</h4>
+                <p>Complete Projects</p>
+            </div>
+        </div>
+        <div class="col-md-2 col-sm-6 growth-card">
+            <div class="card-content">
+                <div class="icon"><i class="fa">&#xf091;</i></div>
+                <h4>75 +</h4>
+                <p>Win Awards</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+
+  <script src="https://code.jquery.com/jquery-1.9.1.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="scripts.js"></script>
+</body>
+</html>
